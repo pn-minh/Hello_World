@@ -1,137 +1,1549 @@
 --- !Missed
 Pass:            inline
 Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 7, Column: 0 }
-Function:        main
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                   Line: 401, Column: 0 }
+Function:        '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z'
 Args:
-  - Callee:          '??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z'
+  - Callee:          strlen
   - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??_U@YAPEAX_K@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 27, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 28, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??_V@YAXPEAX@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 7, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??_U@YAPEAX_K@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 27, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
-  - String:          ' because its definition is unavailable'
-...
---- !Missed
-Pass:            inline
-Name:            NoDefinition
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 28, Column: 0 }
-Function:        main
-Args:
-  - Callee:          '??_V@YAXPEAX@Z'
-  - String:          ' will not be inlined into '
-  - Caller:          main
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - Caller:          '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 385, Column: 0 }
   - String:          ' because its definition is unavailable'
 ...
 --- !Passed
-Pass:            licm
-Name:            Hoisted
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 13, Column: 0 }
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 71, Column: 0 }
+Function:        '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 78, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 82, Column: 0 }
+Function:        '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - String:          ''''
+  - Callee:          '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 78, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - Callee:          '?good@ios_base@std@@QEBA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 103, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - Callee:          '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ'
+  - String:          ' will not be inlined into '
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 104, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - Callee:          '?good@ios_base@std@@QEBA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 91, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14990'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+  - String:          ':'
+  - Line:            '0'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 97, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 68, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 105, Column: 0 }
+Function:        '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '50'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                   Line: 52, Column: 0 }
+Function:        '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+Args:
+  - Callee:          '?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 51, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                   Line: 52, Column: 0 }
+Function:        '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?rdstate@ios_base@std@@QEBAHXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 271, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 51, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 112, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - Callee:          '?uncaught_exception@std@@YA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - Callee:          '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '50'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+  - String:          ':'
+  - Line:            '12'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - Callee:          '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - Callee:          '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 767, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 385, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15000'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '6'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 768, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?width@ios_base@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 358, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 803, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '195'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '42'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 768, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?width@ios_base@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 358, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 768, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?width@ios_base@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 358, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 769, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 91, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14735'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 771, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 123, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15030'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '10'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 775, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?flags@ios_base@std@@QEBAHXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 321, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 78, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 99, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 471, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 463, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 78, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '23'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\streambuf', 
+                       Line: 171, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '23'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 78, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '29'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 99, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '29'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 803, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 108, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14805'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '42'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?eof@?$_Narrow_char_traits@DH@std@@SAHXZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 471, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15030'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '29'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                       Line: 463, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '29'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?width@ios_base@std@@QEAA_J_J@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 362, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '36'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 798, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 51, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '37'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                       Line: 51, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+  - String:          ':'
+  - Line:            '40'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '..\Hello_World.cpp', Line: 6, Column: 0 }
 Function:        main
 Args:
-  - String:          'hoisting '
-  - Inst:            add
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 13, Column: 0 }
+  - String:          ''''
+  - Callee:          '??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 761, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-13655'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          main
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '0'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 82, Column: 0 }
+Function:        '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xstring', 
+                   Line: 401, Column: 0 }
+Function:        main
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?good@ios_base@std@@QEBA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 103, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 104, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?good@ios_base@std@@QEBA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 82, Column: 0 }
+Function:        main
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                   Line: 52, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ios', 
+                   Line: 52, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 112, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?uncaught_exception@std@@YA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 82, Column: 0 }
+Function:        main
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 112, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?uncaught_exception@std@@YA_NXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - Callee:          '?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ'
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 82, Column: 0 }
+Function:        main
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - Callee:          __std_terminate
+  - String:          ' will not be inlined into '
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because it should never be inlined '
+  - String:          '(cost=never)'
+  - String:          ': '
+  - Reason:          no alwaysinline attribute
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 120, Column: 0 }
+Function:        main
+Args:
+  - String:          ''''
+  - Callee:          '??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ'
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 77, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          main
+    DebugLoc:        { File: '..\Hello_World.cpp', Line: 5, Column: 0 }
+  - String:          ''' because it should never be inlined '
+  - String:          '(cost=never)'
+  - String:          ': '
+  - Reason:          no alwaysinline attribute
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
 Function:        main
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -139,7 +1551,26 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        main
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
 Function:        main
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -147,33 +1578,175 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 71, Column: 0 }
 Function:        main
 Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 7, Column: 0 }
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 73, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 97, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 104, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 97, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 103, Column: 0 }
 ...
 --- !Passed
 Pass:            gvn
 Name:            LoadElim
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
 Function:        main
 Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' eliminated'
   - String:          ' in favor of '
-  - InfavorOfValue:  load
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
+  - InfavorOfValue:  ''
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 103, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 124, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 124, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 775, Column: 0 }
 Function:        main
 Args:
   - String:          'load of type '
@@ -181,41 +1754,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 22, Column: 0 }
-Function:        main
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
-Function:        main
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 7, Column: 0 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 775, Column: 0 }
 Function:        main
 Args:
   - String:          'load of type '
@@ -223,15 +1773,452 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 8, Column: 0 }
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 22, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 790, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\streambuf', 
+                       Line: 172, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 798, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 798, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                   Line: 272, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\streambuf', 
+                       Line: 172, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 790, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 364, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 71, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 73, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 92, Column: 0 }
 Function:        main
 Args:
   - String:          'load of type '
@@ -239,32 +2226,504 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 10, Column: 0 }
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 73, Column: 0 }
 ...
---- !Passed
-Pass:            licm
-Name:            InstSunk
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 22, Column: 0 }
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 97, Column: 0 }
 Function:        main
 Args:
-  - String:          'sinking '
-  - Inst:            trunc
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 22, Column: 0 }
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
 ...
---- !Passed
-Pass:            licm
-Name:            Hoisted
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 14, Column: 0 }
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 104, Column: 0 }
 Function:        main
 Args:
-  - String:          'hoisting '
-  - Inst:            zext
-    DebugLoc:        { File: '..\Hello_World.cpp', Line: 14, Column: 0 }
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 97, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 103, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 103, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 775, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 775, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 784, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 790, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\streambuf', 
+                       Line: 172, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 798, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 798, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                   Line: 272, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\streambuf', 
+                       Line: 172, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 790, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 797, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 775, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 777, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 92, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     invoke
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 104, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\xiosbase', 
+                       Line: 364, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 801, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 768, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchpad
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 118, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 78, Column: 0 }
+Function:        main
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     catchret
+    DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                       Line: 798, Column: 0 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: '..\Hello_World.cpp', Line: 9, Column: 0 }
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 790, Column: 0 }
+Function:        main
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.33.31629\include\ostream', 
+                   Line: 777, Column: 0 }
 Function:        main
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
